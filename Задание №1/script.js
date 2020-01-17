@@ -21,8 +21,6 @@ let expenPriceTwo = prompt('Во сколько обойдется?', '');
 
 appData.expenses.expenMandTwo = expenPriceTwo;
 
-let budgetForOneDay = (appData.moneyData /30);
+alert(appData.moneyData /30);
 
-alert(budgetForOneDay);
 
-console.log(budgetForOneDay);
