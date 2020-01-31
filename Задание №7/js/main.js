@@ -1,0 +1,23 @@
+let btn = document.querySelector('#start'),
+	budget = document.getElementsByClassName('budget-value'),
+	daybudget = document.getElementsByClassName('daybudget-value'),
+	level = document.getElementsByClassName('level-value'),
+	expenses = document.getElementsByClassName('expenses-value'),
+	optionalexpenses = document.getElementsByClassName('optionalexpenses-value'),
+	income = document.getElementsByClassName('income-value'),
+	monthsavings = document.getElementsByClassName('monthsavings-value'),
+	yearsavings = document.getElementsByClassName('yearsavings-value'),
+	expensesItem = document.querySelectorAll('.expenses-item'),
+	btnOpt = document.querySelector('button.optionalexpenses-btn'),
+	btnCount = document.querySelector('button.count-budget-btn'),
+	optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item'),
+	chooseIncome = document.querySelector('.choose-income'),
+	savings = document.querySelector('#savings'),
+	chooseSum = document.querySelector('#sum'),
+	choosePercent = document.querySelector('#percent'),
+	yearValue = document.querySelector('.year-value'),
+	monthValue = document.querySelector('.month-value'),
+	dayValue = document.querySelector('.day-value');
+	// btnOpt = document.getElementsByTagName('button'),
+	// btnCount = document.getElementsByTagName('button');
+
