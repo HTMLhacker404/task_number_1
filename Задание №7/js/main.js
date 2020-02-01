@@ -1,4 +1,4 @@
-let btn = document.querySelector('#start'),
+let startBtn = document.querySelector('#start'),
 	budget = document.getElementsByClassName('budget-value'),
 	daybudget = document.getElementsByClassName('daybudget-value'),
 	level = document.getElementsByClassName('level-value'),
@@ -8,8 +8,8 @@ let btn = document.querySelector('#start'),
 	monthsavings = document.getElementsByClassName('monthsavings-value'),
 	yearsavings = document.getElementsByClassName('yearsavings-value'),
 	expensesItem = document.querySelectorAll('.expenses-item'),
-	btnOpt = document.querySelector('button.optionalexpenses-btn'),
-	btnCount = document.querySelector('button.count-budget-btn'),
+	btnOpt = document.querySelector('button')[1],
+	btnCount = document.querySelector('button')[2],
 	optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item'),
 	chooseIncome = document.querySelector('.choose-income'),
 	savings = document.querySelector('#savings'),
@@ -18,6 +18,4 @@ let btn = document.querySelector('#start'),
 	yearValue = document.querySelector('.year-value'),
 	monthValue = document.querySelector('.month-value'),
 	dayValue = document.querySelector('.day-value');
-	// btnOpt = document.getElementsByTagName('button'),
-	// btnCount = document.getElementsByTagName('button');
 
