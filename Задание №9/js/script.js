@@ -8,12 +8,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		function hideTabContent(a) {
 			for (let i = a; i < tabContent.length; i++) {
-				tabContent[i].classList.remove('show'); 
-				tabContent[i].classList.add('hide');
+				tabContent[i].classList.remove('show'); // В css прописан класс с display: flex;
+				tabContent[i].classList.add('hide'); // В css прописан класс с display: none;
 			}
 		}
 
-		hideTabContent(1); 
+		hideTabContent(1); // 1 - чтобы первый элемент не скрывался со страницы, иначе изначально на странице не будет .info-tabcontent;
 
 		function showTabContent(b) {
 			if (tabContent[b].classList.contains('hide')) {
@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		info.addEventListener('click', function(event) {	
 			let target = event.target;
+			// console.log(target);
 			if (target && target.classList.contains('info-header-tab')) {
 				for (let i = 0; i < tab.length; i++) {
 					if (target == tab[i]) {
