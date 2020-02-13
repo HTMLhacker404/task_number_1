@@ -68,13 +68,14 @@ window.addEventListener('DOMContentLoaded', function() {
 			function updateClock() {
 				let t = getTimeRemaining(endtime);
 				if ((Date.parse(endtime) < Date.parse(new Date()))) {
-					t.hours = '00';
-					t.minutes = '00';
-					t.seconds = '00';	
+					hours.textContent = t.hours = '00';
+					minutes.textContent = t.minutes = '00';
+					seconds.textContent = t.seconds = '00';	
+				} else {
+					hours.textContent = (t.hours <= 9) ? '0' + t.hours : t.hours;
+					minutes.textContent = (t.minutes <= 9) ? '0' + t.minutes : t.minutes;
+					seconds.textContent = (t.seconds <= 9) ? '0' + t.seconds : t.seconds;
 				}
-				hours.textContent = (t.hours <= 9) ? '0' + t.hours : t.hours;
-				minutes.textContent = (t.minutes <= 9) ? '0' + t.minutes : t.minutes;
-				seconds.textContent = (t.seconds <= 9) ? '0' + t.seconds : t.seconds;
 
 				if (t.total <= 0) {
 					clearInterval(timeInterval);
